@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Recopilación de Información</title>
+</head>
+<body>
+
+    <h1>Formulario de Recopilación de Información</h1>
+
+    <form action="proceso.php" method="POST">
+
+        <h2>Datos Personales</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br><br>
+
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" required>
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+        </select><br><br>
+
+        <h2>Contacto</h2>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="codigoPostal">Código Postal:</label>
+        <input type="text" id="codigoPostal" name="codigoPostal" required><br><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+
+        <label for="ciudad">Ciudad:</label>
+        <select id="ciudad" name="ciudad" required>
+            <option value="Jaén">Jaén</option>
+            <option value="Almería">Almería</option>
+            <option value="Cádiz">Cádiz</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Granada">Granada</option>
+            <option value="Huelva">Huelva</option>
+            <option value="Málaga">Málaga</option>
+            <option value="Sevilla">Sevilla</option>
+        </select><br><br>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required><br><br>
+
+        <h2>Datos de Interés</h2>
+        <label for="estadoCivil">Estado Civil:</label>
+        <select id="estadoCivil" name="estadoCivil" required>
+            <option value="Casado">Casado</option>
+            <option value="No Casado">No Casado</option>
+        </select><br><br>
+
+        <label for="hobbies">Hobbies:</label><br>
+        <input type="checkbox" id="deporte" name="hobbies" value="Deporte">
+        <label for="deporte">Deporte</label><br>
+        <input type="checkbox" id="cine" name="hobbies" value="Cine">
+        <label for="cine">Cine</label><br>
+        <input type="checkbox" id="lectura" name="hobbies" value="Lectura">
+        <label for="lectura">Lectura</label><br>
+        <input type="checkbox" id="correr" name="hobbies" value="Correr">
+        <label for="correr">Correr</label><br>
+
+        <textarea id="comentarios" name="comentarios" placeholder="Comentarios adicionales" rows="5" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetear">
+
+    </form>
+
+</body>
+</html>
